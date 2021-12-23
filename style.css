@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+  }
+
+:root {
+  --footer-color: #F4F5F8;
+  --background-color: #707070;
+  --btn-color: #FFE000;
+  --headerColor: #003C55;
+}
+
+body {
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+/* Header */
+header {
+  width: 100vw;
+  background-color: #003C55;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+    a > svg {
+      height: 2.5rem;
+    }
+
+    h1 {
+      color: white ;
+      font-size: 1.6rem;      
+    }
+
+    .btn-header {
+      box-shadow: 0px 6px 9px -5px #000000;
+      background-color:#FFE000;
+      border-radius: 3px;
+      border: 1px solid #000000;
+      display: inline-block;
+      cursor: pointer;
+      color:#333333;
+      font-size: 0.5rem;
+      font-weight: bold;
+      padding: 7px 30px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #ffffff;
+    }
+
+    .btn-header:active {
+      position: relative;
+      background-color:#37c075;
+      top:1px;
+    }
+
+    /* CLASA DE ADAUGET - sterge butonul, pastreaza div-ul */
+    .btn-invisible {
+      background-color:#003C55;
+      color:#003C55;
+      text-shadow: 0px 1px 0px #003C55;
+      border: none;
+      box-shadow: none;
+      cursor: none;
+    }
+
+
+/* Container - Main */
+.container {
+  background-color: #f8f6f4;
+  width: 70vw;
+  height: 80vh;
+  left: 15vw;
+  right: 15vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.page-one {
+  /* TO DO _ JS FUNCTION TO CHNAGE to Display Flex */
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-img {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.main-img > svg:nth-child(1) {
+  margin-left: 10vw;
+}
+
+.main-img > svg:nth-child(2) {
+  margin-right: 10vw;
+  height: 160%;
+}
+
+.action {
+  margin-top: 15vh;
+}
+
+.action > .join-btn {
+  box-shadow: 0px 6px 9px -5px #000000;
+  background-color:#FFE000;
+  border-radius:3px;
+  border: 1px solid #000000;
+  display: inline-block;
+  cursor: pointer;
+  color:#333333;
+  font-size: 0.5rem;
+  font-weight: bold;
+  padding: 7px 70px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+}
+
+.action > .join-btn:active {
+  position: relative;
+  background-color:#37c075;
+  top:1px;
+}
+
+
+
+/* Container - Page Two */
+
+.page-two {
+  /* DE SCHIMBAT IN DISPLAY FLEX */
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  
+}
+
+  /* Title */
+  .page-two > h3 {
+    padding: 50px 0;
+    text-align: center;
+    color: #003C55;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+
+  /* Form */
+  .form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .form > h4 {
+    margin: 25px 0 0px 0;
+    color: #003C55;
+    font-size: 0.9rem;
+  }
+
+
+
+input:focus::placeholder {
+    color: transparent;
+  }
+
+.name, .address, .location, .contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+
+  .first-name, .last-name, .address-one, .address-two,.city, .state, .zip, .phone, .email {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2px;
+  margin-top: 10px;
+}
+
+/* Input fields */
+[type='text'], [type='number'], [type='email'], #addressTwo ,#country-state {
+  font-size: 0.6em;
+  color: #707070;
+  padding-left: 5px;
+  box-shadow: 0px 6px 9px -5px #000000;
+  border-radius: 2px;
+  border: #000000;
+  font-size: 0.7rem;
+  padding: 5px;
+}
+  
+.required label, .address-two label {
+  font-weight: bold;
+  font-size: 0.6em;
+  color: #003C55;
+  margin-bottom: 2px;
+}
+
+.page-two > form > button {
+  box-shadow: 0px 6px 9px -5px #000000;
+  background-color:#FFE000;
+  border-radius:3px;
+  border: 1px solid #000000;
+  cursor: pointer;
+  color:#333333;
+  font-size: 0.5rem;
+  font-weight: bold;
+  padding: 7px 70px;
+  text-decoration:none;
+  margin: 30px  0;
+  align-self: flex-end;
+}
+
+.page-two > form > button:active {
+  position: relative;
+  background-color:#37c075;
+  top:1px;
+}
+
+
+/* Red Star - REQUIRED  */
+.required label:after {
+  color: #e32;
+  content: ' *';
+  display:inline;
+}
+
+/* Input number - no arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+/* Page Three */
+.page-three {
+    /* DE SCHIMBAT IN DISPLAY FLEX */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.page-three > h1 {
+  color: #003C55;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  width: 100vw;
+  background-color: #707070;
+  color: #F4F5F8;
+  height: 10vh;
+  top: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > h3 {
+  font-weight: 300;
+  color: #F4F5F8;
+}
+
+
+
+
+
+/* FORM VALIDATION */
+
+.success {
+border: 2px solid green;
+}
+.error {
+border: 2px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
